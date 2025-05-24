@@ -1,0 +1,87 @@
+.discord-sv .tooltip,
+.server1 .tooltip,
+.server2 .tooltip,
+.server3 .tooltip,
+.server4 .tooltip,
+.server5 .tooltip,
+.add-server .tooltip,
+.discover-servers .tooltip,
+.download-apps .tooltip {
+  position: absolute;
+
+  left: 71px;
+
+  color: white;
+  background-color: rgb(32, 32, 32);
+
+  transition: opacity 0.25s;
+  opacity: 0;
+
+  pointer-events: none;
+
+  z-index: 1001;
+}
+
+.discord-sv .tooltip,
+.server1 .tooltip,
+.server2 .tooltip,
+.server3 .tooltip,
+.server4 .tooltip,
+.server5 .tooltip,
+.add-server .tooltip,
+.discover-servers .tooltip,
+.download-apps .tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 6px;
+
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 12px;
+}
+
+/* Personalizing every .tooltip */
+.discord-sv .tooltip {
+  width: 127px;
+}
+
+.server2 .tooltip {
+  left: 65px;
+}
+
+.server3 .tooltip {
+  width: 107px;
+  left: 65px;
+}
+
+.server4 .tooltip {
+  left: 70px;
+}
+
+.server5 .tooltip,
+.add-server .tooltip,
+.discover-servers .tooltip,
+.download-apps .tooltip {
+  left: 60px;
+}
+
+.add-server .tooltip {
+  width: 100px;
+}
+
+.download-apps .tooltip {
+  width: 127px;
+}
+
+.discord-sv:hover .tooltip,
+.server1:hover .tooltip,
+.server2:hover .tooltip,
+.server3:hover .tooltip,
+.server4:hover .tooltip,
+.server5:hover .tooltip,
+.add-server:hover .tooltip,
+.discover-servers:hover .tooltip,
+.download-apps:hover .tooltip {
+  opacity: 2;
+}
