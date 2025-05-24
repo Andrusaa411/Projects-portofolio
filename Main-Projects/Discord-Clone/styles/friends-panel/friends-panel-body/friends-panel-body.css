@@ -1,0 +1,431 @@
+.friends-panel__body {
+  display: flex;
+
+  overflow: hidden;
+  position: relative;
+
+  height: 100%;
+}
+
+/* Friends list  */
+
+.friends-panel__status {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  border-right: 1px solid rgb(66, 66, 66);
+
+  overflow: visible;
+
+  flex: 2.7;
+
+  height: 100%;
+}
+
+/* Searchbar + Search icon properties */
+.friends-list__searchbar-container {
+  display: flex;
+
+  position: relative;
+  top: 0;
+
+  background-color: black;
+
+  border: 1px solid rgba(66, 66, 66, 0.534);
+  border-radius: 10px;
+
+  width: 93%;
+
+  margin-top: 12px;
+  margin-left: 25px;
+
+  padding: 0px 12px;
+
+  /* box-shadow: 0px 1.5px 20px rgba(255, 255, 255, 0.5); */
+
+  box-shadow: 0px 1px 2px rgba(24, 24, 24, 0.5);
+
+  transition: box-shadow 0.16s, border 0.16s;
+
+  z-index: 3;
+}
+
+/* Search-bar */
+
+.searchbar {
+  width: 99.5%;
+  height: 45px;
+
+  font-size: 17px;
+
+  background-color: black;
+  color: rgba(255, 255, 255, 0.685);
+
+  border: none;
+  overflow: visible;
+}
+
+.searchbar:focus {
+  outline: none;
+}
+
+.searchbar::placeholder {
+  transition: color 0.16s;
+}
+
+.friends-list__searchbar-container:has(.searchbar:focus) {
+  box-shadow: 0px 1.5px 20px rgb(84, 72, 240);
+  border: 1px solid rgb(84, 72, 240);
+  .searchbar::placeholder {
+    color: rgb(84, 72, 240);
+  }
+}
+
+.searchbar:focus + .search-icon {
+  opacity: 0;
+}
+.searchbar::-webkit-search-cancel-button {
+  filter: invert(2) brightness(3) grayscale(1);
+}
+
+.search-icon {
+  position: absolute;
+
+  right: 10px;
+  bottom: 10px;
+
+  opacity: 1;
+  transition: opacity 0.12s;
+}
+
+/* Friends-list */
+
+.friends-panel__list {
+  overflow-y: auto;
+  overflow-x: visible;
+
+  position: relative;
+
+  flex: 1;
+
+  z-index: 4;
+}
+
+/* Profile-containers */
+
+.friends-list__title {
+  font-size: 15px;
+
+  color: rgb(255, 255, 255);
+  /* background-color: red; */
+
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.friends-list__profile-container {
+  display: flex;
+
+  position: relative;
+
+  width: 95%;
+  height: 50px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+
+  padding: 30px 3px;
+
+  border-top: 1px solid rgba(66, 66, 66, 0.534);
+
+  margin-left: 20px;
+
+  cursor: pointer;
+
+  /* overflow: visible; */
+
+  z-index: 1;
+
+  /* transition: back ground-color 0.16s, border-radius 0.16s; */
+}
+
+/* LEFT-SIDE */
+
+.friends-list__left-side {
+  display: flex;
+
+  align-items: center;
+}
+
+.friends-list__pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+  /* display: flex; */
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.friends-list__pic-container img {
+  border-radius: 500px;
+
+  width: 37px;
+  height: 37px;
+  object-fit: cover;
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+.friends-list__status {
+  position: absolute;
+  top: 35.5px;
+  right: 7px;
+  z-index: 500;
+}
+
+.friends-list__status img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.friends-list__name-container {
+  width: auto;
+}
+
+.friends-list__names {
+  display: flex;
+
+  align-items: center;
+  margin-right: 10px;
+}
+
+.friends-list__online-status {
+  font-size: 12px;
+
+  color: lightgreen;
+}
+
+.friends-list__dnd-status {
+  font-size: 12px;
+
+  color: rgb(247, 51, 51);
+}
+
+.friends-list__away-status {
+  font-size: 12px;
+
+  color: rgb(250, 197, 24);
+}
+
+.friends-list__offline-status {
+  font-size: 12px;
+
+  color: rgb(161, 161, 161);
+}
+
+.friends-list__name {
+  margin-right: 5px;
+}
+
+.friends-list__nickname {
+  opacity: 0;
+
+  color: rgba(255, 255, 255, 0.685);
+  margin-top: 2px;
+
+  font-size: 13.5px;
+  transition: opacity 0.16s;
+}
+
+/* RIGHT-SIDE */
+.friends-list__right-side {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: visible;
+}
+
+.setting-container {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+
+  margin-right: 15px;
+
+  background-color: black;
+  transition: background-color 0.1s;
+
+  border-radius: 50px;
+
+  padding: 8px;
+
+  z-index: 0;
+}
+
+.setting-container:hover {
+  z-index: 1;
+}
+
+.setting-container img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+/* Dynamic properties */
+.friends-list__profile-container:hover {
+  background-color: rgba(44, 44, 44, 0.226);
+
+  border-radius: 10px;
+  border-top: 1px solid transparent;
+
+  padding: 30px 3px;
+
+  .friends-list__nickname {
+    opacity: 1;
+  }
+}
+
+.setting-container:active {
+  background-color: rgba(71, 71, 71, 0.37);
+}
+/* Friends Activity */
+
+.friends-panel__activity {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  /* justify-content: center; */
+
+  flex: 1;
+}
+
+.friends-panel__activity-title {
+  font-size: 20px;
+
+  color: rgb(255, 255, 255);
+
+  margin-top: 15px;
+  /* margin-left: 20px; */
+  margin-bottom: 30px;
+}
+
+.friends-panel__activity-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  height: 70px;
+  width: 85%;
+
+  padding: 0px 15px;
+
+  position: relative;
+
+  border: 1px solid rgba(66, 66, 66, 0.534);
+  border-radius: 20px;
+
+  margin-bottom: 15px;
+
+  cursor: pointer;
+
+  transition: background-color 0.16s;
+}
+
+.friends-panel__activity-left-side {
+  display: flex;
+}
+
+.friends-panel__activity-user-icon-container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* margin-left: -10px; */
+  margin-right: 15px;
+
+  /* background-color: transparent; */
+}
+
+.friends-panel__activity-user-icon-container img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+
+  border-radius: 45px;
+}
+
+.friends-panel__activity-status {
+  position: absolute;
+
+  top: 26px;
+  right: -5px;
+}
+
+.friends-panel__activity-status img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.friends-panel__activity-text {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  margin-top: 4px;
+  margin-left: 0;
+
+  width: auto;
+}
+
+.friends-panel__activity-username {
+  color: white;
+
+  font-size: 15px;
+}
+
+.friends-panel__activity-properties {
+  display: flex;
+
+  color: rgba(255, 255, 255, 0.678);
+}
+
+.friends-panel__activity-game-icon-container img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+
+  vertical-align: end;
+
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.friends-panel__activity-container:hover {
+  background-color: rgba(44, 44, 44, 0.226);
+}

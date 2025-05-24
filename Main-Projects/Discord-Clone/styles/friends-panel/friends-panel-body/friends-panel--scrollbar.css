@@ -1,0 +1,13 @@
+.friends-panel__list::-webkit-scrollbar {
+  width: 6px;
+  /* background: transparent; */
+}
+
+.friends-panel__list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.friends-panel__list::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 8px;
+}

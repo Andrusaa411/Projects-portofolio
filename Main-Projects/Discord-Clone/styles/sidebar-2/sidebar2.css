@@ -1,0 +1,297 @@
+.sidebar2 {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  background-color: black;
+
+  width: 300px;
+  height: 87.11vh;
+
+  margin-left: 76px;
+
+  border: 1px solid rgb(66, 66, 66);
+  border-bottom: none;
+
+  border-top-left-radius: 15px;
+}
+
+/* TOP-Container configuration */
+.top-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 0px;
+
+  border-bottom: 1px solid rgb(66, 66, 66);
+
+  height: 55px;
+}
+
+.top-container button {
+  padding: 6px 50px;
+
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 5px;
+
+  background-color: rgb(49, 49, 49);
+  color: white;
+
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
+.top-container button:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+/* MAIN-Container configuration */
+
+/* MIDDLE-Container configuration */
+.middle-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  border-bottom: 1px solid rgb(66, 66, 66);
+  padding: 8px;
+
+  color: white;
+}
+
+.line {
+  display: flex;
+
+  padding: 4px;
+
+  width: 90%;
+  margin: 3px 17px;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition: background-color 0.25s;
+
+  border-radius: 15px;
+}
+
+.line p {
+  margin-left: 10px;
+}
+
+.line img {
+  margin-left: 10px;
+}
+
+.line:hover {
+  background-color: rgb(39, 39, 39);
+}
+
+.second-line-text {
+  display: flex;
+
+  position: relative;
+
+  width: 85%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-line-text p:nth-of-type(2) {
+  font-size: 13px;
+
+  background-color: rgb(66, 66, 66);
+
+  padding: 2px 6px;
+
+  border-radius: 15px;
+}
+
+.bottom-container {
+  height: 300px;
+}
+
+.top-container,
+.middle-container,
+.bottom-container {
+  width: 100%;
+  margin-top: 0.1px;
+}
+
+/* BOTTOM-Container configuration */
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  margin-top: 6px;
+  margin-bottom: 0;
+
+  color: white;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  align-items: center;
+
+  height: 100%;
+
+  /* max-height: 30%; */
+
+  padding-bottom: 10px;
+}
+
+/* BOTTOM-Container (TOP-SECTION) configuration */
+
+.bottom--top-section {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  color: rgb(145, 145, 145);
+  font-size: 15px;
+
+  padding: 3px 15px;
+
+  width: 90%;
+
+  margin-left: 5.5px;
+  margin-top: 10px;
+}
+
+.bottom--top-section div {
+  display: flex;
+
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom--top-section:hover {
+  color: rgb(230, 230, 230);
+
+  .plus-sign {
+    color: rgb(145, 145, 145);
+  }
+}
+
+.plus-sign {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* BOTTOM-Container (BOTTOM-SECTION) configuration */
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-radius: 10px;
+
+  padding: 5px 3px;
+
+  width: 90%;
+
+  margin-bottom: 5px;
+  margin-left: 0px;
+
+  cursor: pointer;
+}
+
+.profile-container:nth-of-type(1) {
+  margin-top: 15px;
+}
+
+.profile {
+  display: flex;
+
+  align-items: center;
+
+  margin-left: 5px;
+  margin-top: 5px;
+
+  font-size: 15px;
+}
+
+.profile-container:hover {
+  background-color: rgb(25, 25, 25);
+}
+
+.profile-icon {
+  position: relative;
+
+  display: flex;
+
+  margin-right: 12px;
+}
+
+.profile-icon img {
+  border-radius: 500px;
+
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+
+  pointer-events: none;
+}
+
+.status {
+  display: flex;
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+
+  margin-left: -20px;
+  margin-top: 15px;
+  /* margin-bottom: 305px; */
+}
+
+.status img {
+  border-radius: 100px;
+
+  position: absolute;
+
+  bottom: -5px;
+  right: -5px;
+
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.x {
+  opacity: 0;
+
+  color: grey;
+
+  font-size: 13px;
+
+  margin-right: 10px;
+}
+
+.profile-container:hover .x {
+  opacity: 1;
+}
+
+/* //////////////////// */
+/* Latest changes */
+
+.bottom--top-section {
+  overflow: visible;
+}

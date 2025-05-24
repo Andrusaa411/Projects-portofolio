@@ -1,0 +1,85 @@
+.head {
+  height: 45px;
+
+  background-color: rgb(0, 0, 0);
+
+  color: white;
+}
+
+.container-header-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 6000px;
+}
+
+.container-header-message img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+
+  margin-right: 10px;
+}
+
+.container-header-message .top-text {
+  font-size: 13px;
+  color: rgb(218, 218, 218);
+}
+
+.container-header-rightside {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  flex: 1;
+}
+
+.container-header-rightside .container-inbox,
+.container-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.container-header-rightside img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin-right: 20px;
+  color: red;
+}
+
+.container-inbox .tooltip,
+.container-help .tooltip {
+  opacity: 0;
+  transition: opacity 0.25s;
+
+  font-size: 15px;
+
+  position: absolute;
+  bottom: -50px;
+  left: -20px;
+
+  background-color: rgb(29, 29, 29);
+
+  border: 1px solid rgb(66, 66, 66);
+
+  border-radius: 18px;
+
+  padding: 7px 11px;
+  /* width: 150px; */
+
+  pointer-events: none;
+  cursor: pointer;
+
+  z-index: 1000;
+}
+
+.container-inbox:hover .tooltip,
+.container-help:hover .tooltip {
+  opacity: 1;
+}

@@ -1,0 +1,26 @@
+.right-container .tooltip {
+  position: absolute;
+
+  bottom: -25px;
+  right: 10px;
+
+  color: rgb(255, 255, 255);
+
+  font-size: 13px;
+
+  opacity: 0;
+  transition: opacity 0.25s;
+
+  background-color: rgb(29, 29, 29);
+
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 18px;
+
+  padding: 7px 11px;
+
+  pointer-events: none;
+}
+
+.new-group-chat-btn:hover .tooltip {
+  opacity: 1;
+}
