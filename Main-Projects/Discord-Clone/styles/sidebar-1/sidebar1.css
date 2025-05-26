@@ -5,155 +5,127 @@
   flex-direction: column;
 
   align-items: center;
+  /* justify-content: center; */
 
   position: absolute;
   top: 0px;
   bottom: 0px;
   left: 0px;
 
-  width: 76px;
+  width: 4%;
 
   padding-top: 50px;
 
   background-color: rgb(0, 0, 0);
 }
 
-.container-server img {
-  border-radius: 100px;
-
-  width: 55px;
-  height: 55px;
-  object-fit: cover;
-}
-
-/* adjusting the server "icons" */
+/* Iconita discord */
 
 .discord-sv {
-  margin-left: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-bottom: 10px;
-  background-color: rgb(27, 27, 27);
-}
 
-.discord-sv img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-}
+  margin-left: -3%;
 
-.server1 {
-  margin-left: -11px;
-}
-
-.server2 {
-  margin-left: -1.5px;
-}
-
-.server3 {
-  margin-top: -3px;
-  margin-left: -4px;
-}
-
-.server4 {
-  margin-bottom: -10px;
-
-  margin-left: -6.5px;
-}
-
-.server5 {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: -3px;
+  padding: 1px;
 
   background-color: rgb(27, 27, 27);
 
-  padding: 10px 15px;
-
-  border-radius: 10px;
-}
-
-.server5 .pacat-sign {
-  color: rgb(204, 204, 204);
-}
-
-.container-sidebar img {
-  cursor: pointer;
-}
-
-.add-server {
-  background-color: rgb(27, 27, 27);
-
-  padding: 9px;
-
-  border-radius: 10px;
-
-  margin-left: -4px;
-}
-
-.add-server .plus-sign {
-  color: rgb(0, 0, 0);
-  background-color: rgb(204, 204, 204);
-
-  padding: 1.5px 6px;
-
-  font-size: 15px;
-
-  border-radius: 25px;
-}
-
-.discover-servers,
-.download-apps,
-.discord-sv {
-  background-color: rgb(27, 27, 27);
-  padding: 6px 5.5px 5px 5.5px;
-
-  margin-top: 11px;
-  margin-left: -3.5px;
+  padding: 7px;
 
   border-radius: 7px;
 }
 
-.discover-servers img,
-.download-apps img {
-  width: 30px;
-  height: 30px;
+.discord-sv img {
+  width: 35px;
+  height: 35px;
   object-fit: cover;
 }
 
-/* hover and transition properties */
+/* Servere */
 
-.discord-sv,
-.add-server,
-.discover-servers,
-.download-apps,
-.server5 {
-  transition: background-color 0.15s;
-  cursor: pointer;
-}
+.server {
+  margin-left: -5%;
+  background-color: red;
 
-.discord-sv:hover,
-.add-server:hover,
-.discover-servers:hover,
-.download-apps:hover,
-.server5:hover {
-  background-color: rgb(73, 71, 228);
-}
-
-/* configurating tooltips */
-
-.discord-sv,
-.server1,
-.server2,
-.server3,
-.server4,
-.server5,
-.add-server,
-.discover-servers,
-.download-apps {
   display: flex;
   align-items: center;
   justify-content: center;
 
   position: relative;
 
+  margin-bottom: 5px;
+
+  cursor: pointer;
+
+  padding: 6px;
+
+  border-radius: 615px;
+
+  background-color: rgb(0, 0, 0);
+}
+
+.server img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+
+  border-radius: 50px;
+}
+
+.other-server {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(255, 255, 255);
+
+  border-radius: 25px;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+
+  border: 15px;
+
+  margin-left: -5%;
+
+  background-color: rgb(27, 27, 27);
+
+  padding: 13px 10px;
+
+  /* padding: 13px 21px; */
+}
+
+.other-server img {
+  width: 120%;
+  height: 120%;
+
+  border-radius: 17px;
+}
+
+/* hover and transition properties */
+
+.discord-sv,
+.other-server,
+.server {
+  transition: background-color 0.15s;
   cursor: pointer;
 }
+
+.discord-sv:hover,
+.other-server:hover {
+  background-color: rgb(73, 71, 228);
+  /* background-color: red; */
+}
+
+.server:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+/* configurating tooltips */

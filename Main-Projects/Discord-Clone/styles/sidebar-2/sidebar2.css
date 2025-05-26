@@ -12,7 +12,9 @@
   margin-left: 76px;
 
   border: 1px solid rgb(66, 66, 66);
-  border-bottom: none;
+  border-bottom-color: transparent;
+
+  padding-bottom: 75px;
 
   border-top-left-radius: 15px;
 }
