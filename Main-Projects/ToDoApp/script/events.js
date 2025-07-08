@@ -139,6 +139,7 @@ export const addEventListeners = function ({
             Utilities.checkTasksForBtns(taskList);
             Utilities.checkTasksForSort(taskList);
             Utilities.saveToLocalStorage(taskList);
+            inputBar.textContent = "";
           },
         },
         {
