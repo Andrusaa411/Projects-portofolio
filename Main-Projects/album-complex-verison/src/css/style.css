@@ -1,0 +1,74 @@
+/* General Reset */
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Main Content Styling */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Container Border Styling */
+main {
+  border: 2px solid #ccc;
+}
+/* Album Container Styling */
+.album-container {
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: calc(15%); /* Adjust the width to move more to the left */
+}
+
+/* Search Bar Spacing */
+.search-bar {
+  margin: 20px auto;
+  width: 70%;
+  font-size: 1.5em;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.song-score {
+  width: 60px;
+}

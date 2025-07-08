@@ -1,0 +1,10 @@
+{
+  "name": "album-reviewer-current",
+  "version": "1.0.0",
+  "description": "Album Reviewer",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Andusa",
+  "license": "ISC"
+}

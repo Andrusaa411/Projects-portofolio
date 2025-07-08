@@ -1,0 +1,1 @@
+## This WEB application is a page where you can put your favorite songs of an album by an artist with scores given by the user and calculate the average entries for all the songs, the result being the rating of the album
