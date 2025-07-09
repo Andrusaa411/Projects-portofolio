@@ -614,13 +614,20 @@ ul:hover::-webkit-scrollbar-thumb {
 
 /* Extra small devices (phones < 480px) */
 @media (max-width: 479px) {
+  body,
+  html {
+    background: fixed white;
+  }
+
   .app {
     width: 100vw;
     height: 100vh;
+    box-shadow: 0 0 0 0;
+    border: none;
   }
 
   header {
-    margin-top: 25%;
+    margin-top: 20%;
     font-size: 75%;
   }
 
@@ -628,7 +635,7 @@ ul:hover::-webkit-scrollbar-thumb {
   .top-side-container .btn__delete-completed-tasks {
     font-size: 40%;
     width: 19%;
-    padding: 4%;
+    padding: 5%;
     top: -50%;
   }
 
