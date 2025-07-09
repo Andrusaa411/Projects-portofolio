@@ -694,3 +694,15 @@ ul:hover::-webkit-scrollbar-thumb {
     font-size: 85%;
   }
 }
+
+/* Teste */
+
+@media (min-width: 1080px) and (min-height: 2388px) {
+  body {
+    background: red;
+  }
+  .app {
+    width: 50vh;
+    height: 50vh;
+  }
+}
