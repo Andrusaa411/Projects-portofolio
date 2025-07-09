@@ -622,13 +622,13 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .app {
     width: 100vw;
-    height: 90vh;
+    height: 110vh;
     box-shadow: 0 0 0 0;
     border: none;
   }
 
   header {
-    margin-top: 20%;
+    margin-top: 25%;
     font-size: 75%;
   }
 
