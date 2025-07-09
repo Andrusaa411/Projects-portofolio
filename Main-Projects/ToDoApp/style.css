@@ -617,11 +617,12 @@ ul:hover::-webkit-scrollbar-thumb {
   body,
   html {
     background: fixed white;
+    height: 90vh;
   }
 
   .app {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     box-shadow: 0 0 0 0;
     border: none;
   }
@@ -633,9 +634,9 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .top-side-container .btn__delete-all-tasks,
   .top-side-container .btn__delete-completed-tasks {
-    font-size: 40%;
+    font-size: 35%;
     width: 19%;
-    padding: 5%;
+    padding: 4%;
     top: -50%;
   }
 
