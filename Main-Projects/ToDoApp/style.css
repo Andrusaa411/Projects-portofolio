@@ -640,9 +640,10 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .app {
     width: 100vh;
-    min-height: 70vh;
+    min-height: 100vh;
     box-shadow: 0 0 0 0;
     border: none;
+    padding: 0;
   }
 
   header {
@@ -656,6 +657,7 @@ ul:hover::-webkit-scrollbar-thumb {
     width: 19%;
     padding: 4%;
     top: -50%;
+    margin: 1%;
   }
 
   .top-side-container .input-area {
