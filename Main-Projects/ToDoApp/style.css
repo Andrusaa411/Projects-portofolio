@@ -633,13 +633,13 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .app {
     width: 100vw;
-
+    min-height: 100vh;
     box-shadow: 0 0 0 0;
     border: none;
   }
 
   header {
-    margin-top: 25%;
+    margin-top: 8%;
     font-size: 75%;
   }
 
@@ -672,6 +672,7 @@ ul:hover::-webkit-scrollbar-thumb {
     margin-top: 7.5%;
 
     padding-top: 4%;
+    padding-bottom: 0%;
     font-size: 15px;
   }
 
