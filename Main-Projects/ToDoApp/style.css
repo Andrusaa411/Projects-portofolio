@@ -376,7 +376,6 @@ ul:hover::-webkit-scrollbar-thumb {
 }
 
 .btn__delete-completed-tasks,
-.btn__sort-tasks,
 .btn__delete-all-tasks {
   position: absolute;
   cursor: pointer;
@@ -412,15 +411,21 @@ ul:hover::-webkit-scrollbar-thumb {
 }
 
 .btn__sort-tasks {
-  right: 18%;
-  bottom: -5%;
+  /* right: 18%; */
+  /* bottom: -5%; */
+  display: none;
+
+  margin-left: 1%;
   font-size: 45%;
   background-color: transparent;
   border: none;
+  border-bottom: 2px solid black;
+  transition: color 0.3s, border-color 0.3s;
+  cursor: pointer;
 }
 
 .span__sort {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-thickness: 2px;
 }
 

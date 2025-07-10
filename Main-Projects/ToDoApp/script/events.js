@@ -162,6 +162,7 @@ export const addEventListeners = function ({
     Utilities.checkTasksForBtns(taskList);
     localStorage.removeItem("tasks");
     Utilities.saveToLocalStorage(taskList);
+    Utilities.resetSorting(btnSort);
   });
 
   btnSort.addEventListener("click", function () {

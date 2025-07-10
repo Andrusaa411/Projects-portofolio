@@ -214,6 +214,7 @@ export function sortFunctionalities(btnSort, taskList) {
 
   function activeTasksOrder() {
     btnSort.style.color = "red";
+    btnSort.style.borderColor = "red";
 
     originalOrderArr.forEach(function (task) {
       if (task.classList.contains("completed")) task.remove();
@@ -222,6 +223,7 @@ export function sortFunctionalities(btnSort, taskList) {
   }
   function completedTasksOrder() {
     btnSort.style.color = "green";
+    btnSort.style.borderColor = "green";
 
     originalOrderArr.forEach(function (task) {
       if (!task.classList.contains("completed")) task.remove();
@@ -234,6 +236,7 @@ export function sortFunctionalities(btnSort, taskList) {
   }
   function originalOrder() {
     btnSort.style.color = "black";
+    btnSort.style.borderColor = "black";
 
     originalOrderArr.forEach(function (task) {
       task.remove();
@@ -251,6 +254,11 @@ export function resetOriginalOrder() {
   originalOrderArr.length = 0;
 }
 
+export function resetSorting(btnSort) {
+  currentClick = 0;
+  btnSort.style.color = "black";
+  btnSort.style.borderColor = "black";
+}
 /// Local storage functions
 
 export function saveToLocalStorage(tasklist) {
