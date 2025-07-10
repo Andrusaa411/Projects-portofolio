@@ -67,7 +67,7 @@ header {
   display: flex;
 
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 75%;
 
   margin: 0 auto;
