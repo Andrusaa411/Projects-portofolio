@@ -640,7 +640,7 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .app {
     width: 100%;
-    min-height: 100%;
+    min-height: 90%;
     box-shadow: 0 0 0 0;
     border: none;
     padding: 0;
