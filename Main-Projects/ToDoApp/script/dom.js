@@ -11,7 +11,6 @@ export const buildDom = function () {
   const inputBar = document.createElement("input");
 
   const btnSort = document.createElement("button");
-  const spanSort = document.createElement("span");
 
   const btnDeleteAllTasks = document.createElement("button");
 
@@ -28,7 +27,6 @@ export const buildDom = function () {
 
   formContainer.appendChild(inputBar);
   formContainer.appendChild(btnSort);
-  btnSort.appendChild(spanSort);
 
   app.appendChild(taskList);
 
@@ -48,9 +46,7 @@ export const buildDom = function () {
 
   btnSort.classList.add("btn__sort-tasks");
   btnSort.type = "button";
-
-  spanSort.classList.add("span__sort");
-  spanSort.textContent = "Sort";
+  btnSort.textContent = "Sort";
 
   btnDeleteAllTasks.classList.add("btn__delete-all-tasks");
   btnDeleteAllTasks.textContent = "Delete All Tasks";
@@ -63,7 +59,7 @@ export const buildDom = function () {
     formContainer,
     inputBar,
     btnSort,
-    spanSort,
+
     btnDeleteAllTasks,
     taskList,
   };

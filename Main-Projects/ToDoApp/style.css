@@ -514,8 +514,8 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .btn__sort-tasks {
     font-size: 65%;
-    right: 4%;
-    bottom: -3%;
+    border-bottom: 0.5px solid black;
+    margin-left: 1.4%;
   }
 
   .span__sort {
@@ -591,8 +591,8 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .btn__sort-tasks {
     font-size: 55%;
-    right: 8%;
-    bottom: -5%;
+    border-bottom: 0.5px solid black;
+    margin-left: 1.3%;
   }
 
   .span__sort {
@@ -639,8 +639,8 @@ ul:hover::-webkit-scrollbar-thumb {
   }
 
   .app {
-    width: 100vw;
-    min-height: 100vh;
+    width: 100vh;
+    min-height: 70vh;
     box-shadow: 0 0 0 0;
     border: none;
   }
@@ -667,12 +667,8 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .btn__sort-tasks {
     font-size: 45%;
-    right: 10%;
-    bottom: -2.3%;
-  }
-
-  .span__sort {
-    text-decoration-thickness: 0.5px;
+    border-bottom: 0.5px solid black;
+    margin-left: 1.3%;
   }
 
   ul {
