@@ -643,11 +643,10 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .app {
     width: 100%;
-    min-height: 110%;
+    min-height: 110vh;
     box-shadow: 0 0 0 0;
     border: none;
     padding: 0;
-    background-color: red;
   }
 
   header {
