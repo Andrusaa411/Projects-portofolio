@@ -473,10 +473,16 @@ ul:hover::-webkit-scrollbar-thumb {
 
 /* Large devices (small laptops) */
 @media (max-width: 1024px) {
+  body,
+  html {
+    background: fixed white;
+  }
+
   .app {
     width: 100vw;
-    height: 100vh;
-    border-radius: 0;
+
+    box-shadow: 0 0 0 0;
+    border: none;
   }
 
   header {
@@ -544,14 +550,20 @@ ul:hover::-webkit-scrollbar-thumb {
 
 /* Medium devices (tablets) */
 @media (max-width: 768px) {
+  body,
+  html {
+    background: fixed white;
+  }
+
   .app {
     width: 100vw;
-    height: 100vh;
-    border-radius: 0;
+
+    box-shadow: 0 0 0 0;
+    border: none;
   }
 
   header {
-    font-size: 35px;
+    font-size: 120%;
   }
 
   .top-side-container .btn__delete-all-tasks,
@@ -617,12 +629,11 @@ ul:hover::-webkit-scrollbar-thumb {
   body,
   html {
     background: fixed white;
-    height: 90vh;
   }
 
   .app {
     width: 100vw;
-    height: 110vh;
+
     box-shadow: 0 0 0 0;
     border: none;
   }
@@ -697,13 +708,3 @@ ul:hover::-webkit-scrollbar-thumb {
 }
 
 /* Teste */
-
-@media (min-width: 1080px) and (min-height: 2388px) {
-  body {
-    background: red;
-  }
-  .app {
-    width: 50vh;
-    height: 50vh;
-  }
-}
