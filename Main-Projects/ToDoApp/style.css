@@ -683,6 +683,7 @@ ul:hover::-webkit-scrollbar-thumb {
     padding-top: 4%;
     padding-bottom: 0%;
     font-size: 15px;
+    overflow: hidden;
   }
 
   ul::-webkit-scrollbar {
