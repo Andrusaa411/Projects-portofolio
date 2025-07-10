@@ -639,8 +639,8 @@ ul:hover::-webkit-scrollbar-thumb {
   }
 
   .app {
-    width: 100vh;
-    min-height: 110vh;
+    width: 100%;
+    min-height: 100%;
     box-shadow: 0 0 0 0;
     border: none;
     padding: 0;
