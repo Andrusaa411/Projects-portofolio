@@ -96,7 +96,7 @@ header {
 
 ul {
   width: 70%;
-  height: 510%;
+  max-height: 80vh;
 
   overflow-y: auto;
 
@@ -682,7 +682,6 @@ ul:hover::-webkit-scrollbar-thumb {
     padding-top: 4%;
     padding-bottom: 0%;
     font-size: 15px;
-    overflow-y: none;
   }
 
   ul::-webkit-scrollbar {
