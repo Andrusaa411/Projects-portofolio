@@ -6,6 +6,8 @@ body {
 
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 
   justify-content: center;
   align-items: center;
@@ -643,7 +645,6 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .app {
     width: 100%;
-    min-height: 100vh;
     box-shadow: 0 0 0 0;
     border: none;
     padding: 0;
@@ -682,6 +683,7 @@ ul:hover::-webkit-scrollbar-thumb {
     padding-top: 4%;
     padding-bottom: 0%;
     font-size: 15px;
+    overflow-y: none;
   }
 
   ul::-webkit-scrollbar {
@@ -715,5 +717,3 @@ ul:hover::-webkit-scrollbar-thumb {
     font-size: 85%;
   }
 }
-
-/* Teste */
