@@ -686,10 +686,6 @@ ul:hover::-webkit-scrollbar-thumb {
     font-size: 15px;
   }
 
-  .task-container:last-child {
-    background-color: red;
-  }
-
   ul::-webkit-scrollbar {
     width: 1px;
   }
@@ -705,6 +701,10 @@ ul:hover::-webkit-scrollbar-thumb {
 
   .task-container {
     margin-bottom: 5%;
+  }
+
+  .task-container:last-child {
+    margin-bottom: 0;
   }
 
   .btn__edit-task,
