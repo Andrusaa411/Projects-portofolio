@@ -684,8 +684,10 @@ ul:hover::-webkit-scrollbar-thumb {
     padding-top: 4%;
     padding-bottom: 0%;
     font-size: 15px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+  }
+
+  .task-container:last-child {
+    background-color: red;
   }
 
   ul::-webkit-scrollbar {
