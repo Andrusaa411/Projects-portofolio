@@ -196,9 +196,6 @@ export function deleteAllChosenTasks(taskList, status = "") {
   tasksArr.forEach((task) => task.remove());
 
   resetOriginalOrder();
-
-  document.querySelector(".input-area").value = "";
-  document.querySelector(".input-area").focus();
 }
 
 export function checkTasksForSort(taskList) {
