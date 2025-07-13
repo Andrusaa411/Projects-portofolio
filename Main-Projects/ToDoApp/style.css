@@ -143,8 +143,6 @@ ul:hover::-webkit-scrollbar-thumb {
   background-color: rgb(215, 215, 215);
   transition: color 0.2s, background-color 0.2s;
 
-  /* margin-bottom: 2%; */
-
   border-radius: 50px;
 
   margin-right: 1%;
@@ -222,7 +220,6 @@ ul:hover::-webkit-scrollbar-thumb {
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  /* height: 30%; */
   right: 0;
   bottom: -5%;
   width: 30%;
@@ -237,19 +234,19 @@ ul:hover::-webkit-scrollbar-thumb {
 .edit-task-input {
   width: 100%;
 
-  font-size: inherit; /* Match parent font size */
-  font-family: inherit; /* Match parent font */
+  font-size: inherit;
+  font-family: inherit;
 
   background-color: transparent;
 
   border: none;
   outline: none;
 
-  box-sizing: border-box; /* Include padding/border in width */
+  box-sizing: border-box;
 
   line-height: normal;
 
-  color: inherit; /* Match text color */
+  color: inherit;
 
   box-sizing: border-box;
 
@@ -414,8 +411,6 @@ ul:hover::-webkit-scrollbar-thumb {
 }
 
 .btn__sort-tasks {
-  /* right: 18%; */
-  /* bottom: -5%; */
   display: none;
 
   margin-left: 1%;
@@ -425,11 +420,6 @@ ul:hover::-webkit-scrollbar-thumb {
   border-bottom: 2px solid black;
   transition: color 0.3s, border-color 0.3s;
   cursor: pointer;
-}
-
-.span__sort {
-  /* text-decoration: underline; */
-  text-decoration-thickness: 2px;
 }
 
 /* Hovering for top section btns */
@@ -711,7 +701,7 @@ ul:hover::-webkit-scrollbar-thumb {
   ul::after {
     content: "";
     display: block;
-    /* height: 2rem; acts like margin-bottom but invisible */
+
     flex-shrink: 0;
   }
 

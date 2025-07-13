@@ -72,7 +72,6 @@ export const addEventListeners = function ({
     Utilities.originalOrderArr.push(
       document.querySelector(".task-container:last-child")
     );
-    console.log(Utilities.originalOrderArr);
 
     // Updating the numbering of the tasks and adding the delete-all-tasks btn
     Utilities.updateTaskNumbers();

@@ -142,7 +142,6 @@ export function editInputElement(task) {
     if (editDone) return;
     editDone = true;
 
-    console.log("caca");
     const newText = input.value.trim() || oldText;
     const newTaskEl = document.createElement("p");
     newTaskEl.className = "task";
@@ -163,7 +162,6 @@ export function editInputElement(task) {
 }
 
 export function topSectionButtons(buttons, status) {
-  // const status = classStatus === "add" ? "add" : "remove";
   const selectors = Array.isArray(buttons) ? buttons : [buttons];
   selectors.forEach((selector) =>
     document
