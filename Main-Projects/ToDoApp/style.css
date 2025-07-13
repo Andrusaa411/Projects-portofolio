@@ -107,6 +107,8 @@ ul {
 
   position: relative;
 
+  gap: 1rem;
+
   font-size: 70%;
   padding: 2%;
 
@@ -141,7 +143,7 @@ ul:hover::-webkit-scrollbar-thumb {
   background-color: rgb(215, 215, 215);
   transition: color 0.2s, background-color 0.2s;
 
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
 
   border-radius: 50px;
 
@@ -682,7 +684,8 @@ ul:hover::-webkit-scrollbar-thumb {
     margin-top: 7.5%;
 
     padding-top: 4%;
-    padding-bottom: 0%;
+    gap: 0.8rem;
+
     font-size: 15px;
   }
 
@@ -699,12 +702,15 @@ ul:hover::-webkit-scrollbar-thumb {
     border-radius: 20%;
   }
 
-  .task-container {
-    margin-bottom: 5%;
+  ul::after {
+    content: "";
+    display: block;
+    /* height: 2rem; acts like margin-bottom but invisible */
+    flex-shrink: 0;
   }
 
   .task-container:last-child {
-    margin-bottom: 0;
+    margin-bottom: -5%;
   }
 
   .btn__edit-task,
