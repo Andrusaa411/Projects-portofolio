@@ -1,0 +1,143 @@
+.left-container {
+  width: var(--side-containers-width-stats);
+  height: var(--containers-height-stats);
+
+  margin: var(--side-containers-margin-stats);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.left__upper-container {
+  background-color: var(--color-div-containers);
+  border-radius: var(--containers-border-radius);
+
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 95%;
+  height: 45%;
+  /* height: 25%; */
+  padding: 2%;
+
+  margin-bottom: 5%;
+
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.left__upper-container__leftside-container {
+  width: 50%;
+  height: 55%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid black;
+  border-radius: 50%;
+
+  margin-right: 5%;
+  transform: translateX(7%);
+}
+
+.left__upper-container__leftside-container_image {
+  width: 75%;
+  height: 75%;
+}
+
+.left__upper-container__rightside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+
+  font-size: 120%;
+  white-space: nowrap;
+
+  gap: 25px;
+}
+
+.left__upper-container_rightside_details-container {
+  transform: translate(-15%, -15px);
+  font-size: 1.1em;
+  font-weight: bold;
+  /* color: var(--color-high-text-on-dark); */
+  color: var(--color-positive);
+}
+.left__upper-container__rightside-container_condition {
+  transform: translateX(7%);
+}
+.left__upper-container__rightside-container_precip-chance {
+  transform: translateX(15%);
+}
+.left__upper-container__rightside-container_feels-temp {
+  transform: translateX(7%);
+}
+
+.left__upper-container__rightside_meta-details {
+  transform: translate(-15%, 15px);
+}
+
+.left__lower-container {
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* background-color: var(--color-div-containers); */
+  box-sizing: border-box;
+  gap: 5%;
+  /* gap: 2; */
+}
+
+.left__lower-container__moisture-details-container,
+.left__lower-container__atmospheric-details-container {
+  background-color: var(--color-div-containers);
+
+  /* border-radius: var(--containers-border-radius); */
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  padding: 1%;
+  font-size: 100%;
+
+  height: 100%;
+
+  gap: 20px;
+
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.left__lower-container__atmospheric-details-container__atmospheric-title,
+.left__lower-container__moisture-details-container_moisture-title {
+  font-size: 160%;
+  font-weight: bold;
+
+  margin-top: 45%;
+  margin-bottom: 20%;
+  color: var(--color-high-text-on-dark);
+}
+
+.left__lower-container__moisture-details-container_moisture-title {
+  color: var(--color-high-blue);
+}
+
+.left__lower-container__atmospheric-details-container__atmospheric-title {
+  color: var(--color-high-gold);
+}
+
+.moisture-value {
+  font-weight: bold;
+  color: var(--color-high-blue);
+}
+
+.atmosphere-value {
+  font-weight: bold;
+  color: var(--color-high-gold);
+}

@@ -1,0 +1,15 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Andrusa",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}

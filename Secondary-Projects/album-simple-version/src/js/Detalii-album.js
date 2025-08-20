@@ -1,21 +1,16 @@
 export const piese = [
-  `CHAMPAIN & VACAY`,
-  `2000 EXCURSION`,
-  `KICK OUT`,
-  `DUMBO`,
-  `MM3`,
-  `VELOUR`,
-  `CONTEST`,
-  `ILMB`,
-  `WHERE WAS YOU`,
-  `NO COMMENTS`,
-  `BEEP BEEP`,
-  `PBT`,
-  `SHYNE`,
-  `OUTSIDE`,
-  `CANT STOP`,
-  `FLORIDA FLOW`,
+  "put it ong",
+  "loco",
+  "loose leaf",
+  "oh i did",
+  "come n go",
+  "[adl is coming]",
+  "im yeat",
+  "M.F.U",
+  "2tone",
+  "fly nite",
+  "growing pains",
 ];
-export const artist = `Travis Scott`;
-export const album = "Jackboys 2";
-export const imagine = "./src/img/travis1.avif";
+export const artist = `Yeatski`;
+export const album = "A DANGEROUS SUMMER";
+export const imagine = "./src/img/yeat.jpg";

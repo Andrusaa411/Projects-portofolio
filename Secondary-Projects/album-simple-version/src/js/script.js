@@ -85,7 +85,7 @@ export const structura = async function (persoana1, persoana2) {
       `Nota finala obtinuta de albumul "${Detalii.album}" al artistului ${Detalii.artist} din partea lui ${persoana1.name} este ....`
     );
     await wait(5);
-    console.log(`Nota ${calcAverage(persoana1.notes)} !!!`);
+    console.log(`Nota ${calcAverage(persoana1.notes).toFixed(2)} !!!`);
     await wait(3);
     console.log(
       `**SE CALCULEAZA AVERAGEUL NOTELOR LUI ${persoana2.name.toUpperCase()} OBTINUTE**`
@@ -95,7 +95,7 @@ export const structura = async function (persoana1, persoana2) {
       `Nota finala obtinuta de albumul "${Detalii.album}" al artistului ${Detalii.artist} din partea lui ${persoana2.name} este ....`
     );
     await wait(5);
-    console.log(`Nota ${calcAverage(persoana2.notes)} !!!`);
+    console.log(`Nota ${calcAverage(persoana2.notes).toFixed(2)} !!!`);
     await wait(2.5);
     finalResult(calcAverage(persoana1.notes), calcAverage(persoana2.notes));
   } catch (err) {

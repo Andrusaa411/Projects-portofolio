@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/left-container.css" />
+    <link rel="stylesheet" href="styles/middle-container.css" />
+    <link rel="stylesheet" href="styles/right-container.css" />
+    <script defer type="module" src="main.js"></script>
+    <!-- Powered by
+    <a href="https://www.weatherapi.com/" title="Free Weather API"
+      >WeatherAPI.com</a
+    > -->
+    <link rel="icon" type="image/png" href="./images/favicon1.png" />
+  </head>
+  <body>
+    <div class="left-container">
+      <div class="left__upper-container">
+        <div class="left__upper-container__leftside-container">
+          <img src="./images/svg/wi-sunset.svg" class="left__upper-container__leftside-container_image" />
+        </div>
+        <div class="left__upper-container__rightside-container">
+          <div class="left__upper-container_rightside_details-container">
+            <p class="left__upper-container__rightside-container_location">Romania, Braila </p>
+            <p class="left__upper-container__rightside-container-hour+date">12:35 PM, 21/07/2025</p>
+          </div>
+          <p class="left__upper-container__rightside-container_condition">33&#176C, Sunny</p>
+          <p class="left__upper-container__rightside-container_precip-chance">Rain chance: 11%</p>
+          <p class="left__upper-container__rightside-container_feels-temp">Feels like 35&#176C</p>
+          <div class="left__upper-container__rightside_meta-details">
+            <p class="left__upper-container__rightside-container_sunrise">Sunrise: 5:20 AM </p>
+            <p class="left__upper-container__rightside-container_sunset">Sunset: 8:30 PM </p>
+          </div>
+        </div>
+      </div>
+      <div class="left__lower-container">
+      
+        <div class="left__lower-container__moisture-details-container">
+          <p class="left__lower-container__moisture-details-container_moisture-title">Moisture Details</p>
+          <p class="left__lower-container__moisture-details-container_moisture-mb">&#183; Precipitation (m.b): <span class="moisture-value">yesn't</span> </p>
+          <p class="left__lower-container__moisture-details-container_moisture-mm">&#183; Precipitation (m.m): <span class="moisture-value">yes</span> </p>
+          <p class="left__lower-container__moisture-details-container_moisture-humidity"> &#183;  Humidity: <span class="moisture-value">20%</span> </p>
+          <p class="left__lower-container__moisture-details-container_moisture-humidity">&#183; Dew point: <span class="moisture-value">25&#176C</span> </p>
+          <p class="left__lower-container__atmospheric-details-container__moisture-cloud-cover">&#183;Cloud cover: <span class="moisture-value">70%</span> </p>
+        </div>
+
+          <div class="left__lower-container__atmospheric-details-container">
+            <p class="left__lower-container__atmospheric-details-container__atmospheric-title">Weather Details</p>
+            <p class="left__lower-container__atmospheric-details-container__atmospheric-speed">&#183; Wind Speed: <span class="atmosphere-value">25km/h</span> </p>
+            <p class="left__lower-container__atmospheric-details-container__atmospheric-temperature">&#183; Wind Temperature: <span class="atmosphere-value">25&#176C</span> </p>
+            <p class="left__lower-container__atmospheric-details-container__atmospheric-direction">&#183; Wind Direction: West</p>
+            <p class="left__lower-container__atmospheric-details-container__atmospheric-visibility">&#183;  Visibility: <span class="atmosphere-value">10km</span> </p>
+            <p class="left__lower-container__atmospheric-details-container__moon-phase">&#183;  Moon phase: <span class="atmosphere-value">Waning Gibbous</span> </p>
+          </div>
+        </div>
+      </div>
+      <div class="middle-container">
+        <div class="search-city-container">
+          <input class="search-city-input" type="text" placeholder="Search a city" />
+        </div>
+        <ul class="weather-list">
+          <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>    <li class="weather-entry" data-weatherEntry="1">
+          <p class="weather-entry__date">11:00 AM</p>
+           <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+        <li class="weather-entry" data-weatherEntry="2">
+          <p class="weather-entry__time">11:00 AM</p>
+          <div class="weather-entry__visual-container">
+            <img class="weather-entry__icon" src="./images/svg/wi-cloudy-windy.svg"/>
+            <p class="weather-entry__icon-details">Sunny</p>
+          </div>
+          <p class="weather-entry__degrees">Temperature: 35&#176 C</p>
+          <p class="weather-entry__feels-like-degrees">Feels like 36&#176 C</p>
+          <p class="weather-entry__wind-speed">Wind speed: 3km/h</p>
+          <div class="weather-entry__raining-container">
+            <img class="weather-entry__raining-icon" src="./images/svg/wi-rain.svg"/>
+            <p class="weather-entry__precipitation-chance">0%</p>
+          </div>
+        </li>
+      </ul>
+      <div class="button__main-container">
+        <p>Date: </p>
+        <div class="button__main-number-container">
+          <button class="button-left">&#60;</button>
+            <p class="button__number">1</p>
+            <button class="button-right">&#62;</button>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="right-container__upper-container">
+        <img class="right-container__city-image" src="./other/baila.webp" />
+        <p class="right-container__city-image__details">Romania, Braila</p>
+      </div>
+      <div class="right-container__lower-container">
+        <p class="right-container__lower-container__title">City Weather Insights</p>
+        <div class="right-container__lower-container__details-container">
+          <p class="right-container__lower-container__details-container_time-zone">Europe/Bucharest</p>
+          <p class="right-container__lower-container__details-container_local-time">1:51 PM | 08/09/2025</p>
+          <p class="right-container__lower-container__details-container_max/min">Max today: 35&#176C | Min today: 20&#176C</p>
+          <p class="right-container__lower-container__details-container_last-year-w">Weather on this day last year: 37&#176C</p>
+          
+        </div>
+        <button class="toggle-temp-unit-button">Toggle Unit (°C)</button>
+      </div>
+    </div>
+  </body>
+</html>
+

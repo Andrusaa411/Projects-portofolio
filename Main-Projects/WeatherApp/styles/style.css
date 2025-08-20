@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  background-color: var(--color-background);
+  color: white;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --containers-height-stats: 90vh;
+  --containers-border-radius: 105px;
+
+  --side-containers-margin-stats: 2%;
+  --side-containers-width-stats: 25%;
+
+  --middle-container-margin-stats: 2% 0%;
+  --middle-container-width-stats: 50%;
+  --middle-container-height-stats: 90vh;
+
+  --color-background: rgb(174, 197, 235);
+  --color-div-containers: rgb(58, 64, 90);
+  --color-high-text-on-dark: rgb(219, 90, 186);
+  --color-high-text-on-light: rgb(6, 25, 133);
+  --color-imp-elements: rgb(176, 200, 217);
+  /* --color-positive: rgb(27, 153, 139); */
+  --color-positive: rgb(35, 199, 180);
+  --color-negative: rgb(230, 57, 70);
+  --color-high-gold: rgb(255, 208, 102);
+  --color-high-blue: rgb(102, 204, 255);
+
+  --color-btn-1: rgb(53, 63, 95);
+  --color-btn-2: rgb(74, 91, 128);
+  --color-btn-3: rgb(92, 116, 173);
+}
+
+.moisture-value {
+  font-weight: bold;
+  color: var(--color-high-blue);
+}
+
+.atmosphere-value {
+  font-weight: bold;
+  color: var(--color-high-gold);
+}
